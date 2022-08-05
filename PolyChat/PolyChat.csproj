@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UserSecretsId>bd971897-d9f4-4704-b0b8-32663ed8a04e</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Icons\Plus.bmp" />
+    <None Remove="Icons\Send.bmp" />
+    <None Remove="Repository\IMG_20190720_155642.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Icons\Plus.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Send.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.11.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="5.0.0" />
+    <PackageReference Include="Npgsql" Version="6.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Repository\IMG_20190720_155642.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MVVM\View\" />
+  </ItemGroup>
+
+</Project>

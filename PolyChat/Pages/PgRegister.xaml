@@ -1,0 +1,21 @@
+﻿<Page x:Class="PolyChat.Pages.PgRegister"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PolyChat.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PgRegister">
+
+    <Grid>
+        <Frame Content="Frame" HorizontalAlignment="Center" Height="2" Margin="0,180,0,0" VerticalAlignment="Top" Width="0"/>
+        <TextBox x:Name="TxtPassword" HorizontalAlignment="Center" TextWrapping="Wrap" Text="123" VerticalAlignment="Top" Width="120" Margin="0,225,0,0"/>
+        <TextBox x:Name="TxtEmail" HorizontalAlignment="Center" Margin="0,149,0,0" TextWrapping="Wrap" Text="isacstromberg@hotmail.com" VerticalAlignment="Top" Width="120" TextChanged="TxtEmail_TextChanged"/>
+        <Label x:Name="lblSignIn" Content="Welcome to PolyChat!!" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" Background="#FF558CF3"/>
+        <Button x:Name="BtnLogIn" Content="Register" HorizontalAlignment="Center" Margin="0,252,0,0" VerticalAlignment="Top" Width="120" Click="BtnLogIn_Click"/>
+        <Label x:Name="lblSignIn1" Content="E-mail" HorizontalAlignment="Center" Margin="0,118,0,0" VerticalAlignment="Top" Background="#FF558CF3" Width="60"/>
+        <Label x:Name="lblSignIn2" Content="Password" HorizontalAlignment="Center" Margin="0,194,0,0" VerticalAlignment="Top" Background="#FF558CF3"/>
+
+    </Grid>
+</Page>
